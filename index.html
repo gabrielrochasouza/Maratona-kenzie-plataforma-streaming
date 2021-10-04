@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenziefy</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" 
+    rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+    <main>
+        <aside class="MenuLateral">
+            <figure class="MenuLateral__logo">
+                <img src="src/img/logo.png" alt="">
+                <figcaption class="hidden"></figcaption>
+            </figure>
+            <nav class="MenuLateral__navegacao">
+                <ul>
+                    <a href="https://ufftech.com" target="_blank">
+                        <li>
+                            <img src="src/img/icone1.png" alt="">
+                            <span>Home </span> 
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="src/img/icone2.png" alt="">
+                            <span>Browse</span> 
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img src="src/img/icone3.png" alt="">
+                            <span>Liked Songs</span> 
+                        </li>
+                    </a>
+                    
+                </ul>
+            </nav>
+            
+        </aside>
+        <section class="Bloco-Musicas">
+
+            <header class="Banner">
+                <div class="user">
+                    <figure>
+                        <img src="src/img/user.png" alt="">
+                        Gabriel Rocha
+                        <figcaption class="hidden">Usuário</figcaption>
+                    </figure>
+                </div>
+                <div class="qtdMusicas">
+                    <p>
+                    <span id="numSongs">57</span> Songs
+                    </p>
+                </div>    
+            </header>
+
+            <div class="areadeMusicas">
+
+                <button>
+                    Pause
+                </button>
+                <div class="areadeMusicas__Cabecalho">
+                    <ul>
+                        <li>
+                            <p class="primeiro-item">Title</p>
+                            <p>Artist</p>
+                            <p>Album</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="lista-das-musicas">
+                    <li>
+                        <p class="primeiro-item">Back in Black</p>
+                        <p>AC DC</p>
+                        <p>Highway to hell</p>
+                    </li>
+                    <li>
+                        <p class="primeiro-item">Back in Black</p>
+                        <p>AC DC</p>
+                        <p>Highway to hell</p>
+                    </li>
+                    <li>
+                        <p class="primeiro-item">Back in Black</p>
+                        <p>AC DC</p>
+                        <p>Highway to hell</p>
+                    </li>
+                    <li>
+                        <p class="primeiro-item">Back in Black</p>
+                        <p>AC DC</p>
+                        <p>Highway to hell</p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </section>
+
+        <div class="areaPlayer">
+            <figure class="imagemMusica">
+                <img src="src/img/album3.jpeg" alt="album">
+                <figcaption class="hidden">Album</figcaption>
+                <div class="infoMusica">
+                    <h2>Titulo da Musica</h2>
+                    <p>Album</p>
+    
+                </div>
+            </figure>
+
+            
+            
+            <div class="areaPlayer__controls">
+                <img src="src/img/previous.png" class="previous" alt="previous">
+                <img src="src/img/play.png" class="play" alt="play">
+                <img src="src/img/next.png" class="next" alt="next">
+            </div>
+
+            <div class="areaVolume">
+                <img src="src/img/volume.png" alt="volume">
+                <input type="range" class="bar">
+            </div>
+
+        </div>
+
+
+    </main>
+   
+
+</body>
+</html>

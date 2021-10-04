@@ -1,0 +1,294 @@
+body,ul,li,a,div,figure,aside,input,
+header,section,img,p,h2,main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    transition: all 200ms;
+}
+.hidden{
+    display: none;
+}
+a{
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+/*Menu lateral*/
+.MenuLateral{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+.MenuLateral span{
+    display: none;
+}
+.MenuLateral .MenuLateral__logo{}
+.MenuLateral .MenuLateral__logo img{}
+.MenuLateral .MenuLateral__navegacao{}
+.MenuLateral .MenuLateral__navegacao ul{
+    display: flex;
+    align-items: center;
+}
+.MenuLateral .MenuLateral__navegacao li{
+    margin: 0px 9px;
+}
+.MenuLateral .MenuLateral__navegacao li img{
+    
+}
+
+/* Conteudo da direita com as musicas */
+
+/*Banner */
+.Bloco-Musicas{}
+.Bloco-Musicas .Banner{
+    background-image: url(../img/header.png);
+    background-size: cover;
+    height: 150px;
+    padding: 10px;
+    position: relative;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+}
+.Bloco-Musicas .Banner .user{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    
+}
+.Bloco-Musicas .Banner .user figure{
+    display: flex;
+    align-items: center;
+    
+}
+.Bloco-Musicas .Banner .user img{margin-right: 10px;}
+.Bloco-Musicas .Banner .qtdMusicas{
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.Bloco-Musicas .Banner .qtdMusicas p{}
+
+/* Área que contem as musicas*/
+
+/* Cabeçalho das musicas*/
+.Bloco-Musicas {
+    background-color: #0c0c0c;
+
+}
+.Bloco-Musicas .areadeMusicas{
+    background-color: #0c0c0c;
+    color: white;
+    padding: 30px 15px;
+}
+.Bloco-Musicas .areadeMusicas button{
+    background: #3776ee;
+    color: white;
+    padding: 7px 20px;
+    font-size: 23px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.Bloco-Musicas .areadeMusicas button:hover{
+    background: linear-gradient(90deg,#6a03ca,#3d81ff);
+    transition: all 500ms;
+}
+.Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho{}
+.Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho ul{}
+.Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho li{
+    display: flex;
+}
+.Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho p{
+    width: 30%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho .primeiro-item{
+    width: 40%;
+}
+
+
+/*Lista das musicas*/
+::-webkit-scrollbar{
+    background-color: rgb(56, 56, 56);
+    border-radius: 20px;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(168, 168, 168);
+    color:rgb(168, 168, 168) ;
+    border-radius: 20px;
+    width: 3px;
+}
+
+.Bloco-Musicas .areadeMusicas .lista-das-musicas{
+    min-height: 300px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.Bloco-Musicas .areadeMusicas .lista-das-musicas li{
+    display: flex;
+    
+}
+.Bloco-Musicas .areadeMusicas .lista-das-musicas p{
+    width: 30%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.Bloco-Musicas .areadeMusicas .lista-das-musicas li:hover{
+    background-color: rgb(31, 31, 31);
+}
+.Bloco-Musicas .areadeMusicas .lista-das-musicas .primeiro-item{
+    width: 40%;
+}
+
+
+/* Área do player */
+.areaPlayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, #6151ed, #1f006c);
+    position: fixed;
+    bottom: 0;
+    max-width: 2000px;
+    width: 100%;
+    z-index: 100;
+}
+.areaPlayer .imagemMusica{
+    display: flex;
+    align-items: center;
+}
+.areaPlayer .imagemMusica img{
+    width: 70px;
+}
+.areaPlayer .infoMusica{
+    margin-left: 15px;
+
+}
+.areaPlayer .infoMusica h2{
+    font-size: 12px;
+}
+.areaPlayer .infoMusica p{
+    font-size: 10px;
+}
+.areaPlayer .areaPlayer__controls{
+    display: flex;
+    align-items: center;
+}
+.areaPlayer .areaPlayer__controls .next,
+.areaPlayer .areaPlayer__controls .previous{
+    width: 20px;
+    cursor: pointer;
+
+}
+.areaPlayer .areaPlayer__controls .play{
+    width: 35px;
+    cursor: pointer;
+}
+.areaPlayer .areaVolume{
+    display: flex;
+    align-items: center;  
+    margin-right: 50px;  
+}
+.areaPlayer .areaVolume img{
+    width: 20px;
+}
+.areaPlayer .areaVolume input{
+    display: none;
+}
+
+
+@media only screen and (min-width: 470px) {
+    
+    .areaPlayer .areaVolume input{
+        display: initial;
+    }
+
+
+  }
+  @media only screen and (min-width: 1080px) {
+    main{
+        display: flex;
+    }
+    .Bloco-Musicas{
+        width: 80%;
+    }
+ /*Menu lateral*/
+.MenuLateral{
+    width: 20%;
+    display: initial;
+    padding: 35px 40px;
+    height: 100vh;
+}
+.MenuLateral span{
+    display: initial;
+    font-size: 18px;
+    font-weight: 500;
+}
+.MenuLateral .MenuLateral__logo{}
+.MenuLateral .MenuLateral__logo img{
+    width: 130px;
+    margin-bottom: 20px;
+}
+.MenuLateral .MenuLateral__navegacao{}
+.MenuLateral .MenuLateral__navegacao ul{
+    display: initial;
+}
+.MenuLateral .MenuLateral__navegacao li{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.MenuLateral .MenuLateral__navegacao li img{
+    margin-right: 11px;
+    width: 26px;
+}
+.areaPlayer .infoMusica h2{
+    font-size: 25px;
+}
+.areaPlayer .infoMusica p{
+    font-size: 20px;
+}
+.Bloco-Musicas .Banner{
+    height: 200px;
+}
+.areaPlayer .imagemMusica img {
+    width: 80px;
+    opacity: 0.8;
+}
+.areaPlayer .areaPlayer__controls .next,
+.areaPlayer .areaPlayer__controls .previous{
+    width: 35px;
+}
+.areaPlayer .areaPlayer__controls .play{
+    width: 50px;
+}
+.Bloco-Musicas .areadeMusicas .lista-das-musicas p {
+    padding: 15px 20px;
+}
+.Bloco-Musicas .areadeMusicas {
+    padding: 30px 75px;
+}
+}
