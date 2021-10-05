@@ -95,6 +95,7 @@ main{
     background-color: #0c0c0c;
     color: white;
     padding: 30px 15px;
+    min-height: 630px;
 }
 .Bloco-Musicas .areadeMusicas button{
     background: #3776ee;
@@ -120,8 +121,9 @@ main{
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho p{
     width: 30%;
     padding: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 0.5px solid white;
     color: white;
+    font-weight: 600;
 }
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho .primeiro-item{
     width: 40%;
@@ -132,19 +134,20 @@ main{
 ::-webkit-scrollbar{
     background-color: rgb(56, 56, 56);
     border-radius: 20px;
-    width: 5px;
+    width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(187, 187, 187);
     color:rgb(168, 168, 168) ;
     border-radius: 20px;
-    width: 3px;
+
 }
 
 .Bloco-Musicas .areadeMusicas .lista-das-musicas{
-    min-height: 300px;
-    height: 100%;
+    min-height: 200px;
+    height: 400px;
     overflow-y: scroll;
+    margin-bottom: 150px;
 }
 .Bloco-Musicas .areadeMusicas .lista-das-musicas li{
     display: flex;
@@ -153,7 +156,7 @@ main{
 .Bloco-Musicas .areadeMusicas .lista-das-musicas p{
     width: 30%;
     padding: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 0.5px solid white;
     color: white;
 }
 .Bloco-Musicas .areadeMusicas .lista-das-musicas li:hover{
@@ -290,5 +293,8 @@ main{
 }
 .Bloco-Musicas .areadeMusicas {
     padding: 30px 75px;
+}
+.Bloco-Musicas .areadeMusicas p{
+    font-size: 22px;
 }
 }
