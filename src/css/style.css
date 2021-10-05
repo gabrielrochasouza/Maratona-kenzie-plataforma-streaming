@@ -25,7 +25,7 @@ main{
 }
 /*Menu lateral*/
 .MenuLateral{
-    background: black;
+    background: rgb(14, 14, 14);
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -51,9 +51,11 @@ main{
 /* Conteudo da direita com as musicas */
 
 /*Banner */
-.Bloco-Musicas{}
+.Bloco-Musicas{
+    background-color: #131313 !important;
+}
 .Bloco-Musicas .Banner{
-    background-image: url(../img/header.png);
+    background: linear-gradient(270deg, #6151ed, #1f006c); 
     background-size: cover;
     height: 150px;
     padding: 10px;
@@ -92,7 +94,7 @@ main{
 
 }
 .Bloco-Musicas .areadeMusicas{
-    background-color: #0c0c0c;
+    
     color: white;
     padding: 30px 15px;
     min-height: 630px;
@@ -175,7 +177,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(270deg, #6151ed, #1f006c);
+    background: linear-gradient(360deg, black, #000811);
     position: fixed;
     bottom: 0;
     max-width: 2000px;
@@ -189,6 +191,7 @@ main{
 }
 .areaPlayer .imagemMusica img{
     width: 70px;
+    display: none;
 }
 .areaPlayer .infoMusica{
     margin-left: 15px;
@@ -233,7 +236,9 @@ main{
     .areaPlayer .areaVolume input{
         display: initial;
     }
-
+    .areaPlayer .imagemMusica img {
+        display: initial;
+    }
 
   }
   @media only screen and (min-width: 1080px) {
@@ -248,7 +253,7 @@ main{
     width: 20%;
     display: initial;
     padding: 35px 40px;
-    height: 100vh;
+    height: 100auto;
 }
 .MenuLateral span{
     display: initial;
@@ -285,6 +290,7 @@ main{
 .areaPlayer .imagemMusica img {
     width: 80px;
     opacity: 0.5;
+    display: initial;
 }
 .areaPlayer .areaPlayer__controls .next,
 .areaPlayer .areaPlayer__controls .previous{
