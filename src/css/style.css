@@ -287,6 +287,19 @@ main{
 }
 .Bloco-Musicas .Banner{
     height: 200px;
+    border-radius: 40px 0 0 0px;
+}
+.Bloco-Musicas .Banner .qtdMusicas{
+    font-size: 38px;
+    bottom: 40px;
+    left: 50px;
+}
+.Bloco-Musicas .Banner .user{
+
+    top: 40px;
+    right: 60px;
+
+    
 }
 .areaPlayer .imagemMusica img {
     width: 80px;
