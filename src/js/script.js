@@ -17,6 +17,7 @@ const imagemAlbum=document.getElementById('fotoMusicaAtual')
 
 let numeroMusicaSelecionada=0
 
+
 /* Primeira musica a tocar automaticamente se apertar o play */
 player.src = baseMusicas[numeroMusicaSelecionada].path
 atualizarInfoMusica(numeroMusicaSelecionada)
@@ -52,10 +53,6 @@ function criandoLinha(musica, musicaId){
     linhaMusica.dataset.id = musicaId;
     linhaMusica.setAttribute('id',`${musicaId}`)
 
-
-
-    linhaMusica.setC
-
     linhaMusica.appendChild(linhaMusica__titulo);
     linhaMusica.appendChild(linhaMusica__artista);
     linhaMusica.appendChild(linhaMusica__album);
@@ -75,62 +72,23 @@ function criandoLinha(musica, musicaId){
         atualizarInfoMusica(numeroMusicaSelecionada);
         alterarCorMusicaSelecionada(numeroMusicaSelecionada)
         
-        console.log(numeroMusicaSelecionada)
+  
 
- 
     })
 }
 
 const elementoClicado = document.querySelector('li')
 
 
-
-
-
 function inserindoMusicasBaseDados() {
     for(var i=0; i< baseMusicas.length   ; i++){
 
         criandoLinha(baseMusicas[i] , i )
-    }
-    
-        /**Avançar --------------------------------------------*/
-        next.addEventListener('click',function (){
 
-            if(numeroMusicaSelecionada==baseMusicas.length-1){
-                numeroMusicaSelecionada=0
-                tocarMusica(numeroMusicaSelecionada);
-                atualizarInfoMusica(numeroMusicaSelecionada);
-                alterarCorMusicaSelecionada(numeroMusicaSelecionada)
-            }
-            else{
-                numeroMusicaSelecionada++
-                tocarMusica(numeroMusicaSelecionada);
-                atualizarInfoMusica(numeroMusicaSelecionada);
-                alterarCorMusicaSelecionada(numeroMusicaSelecionada)
-            }
-            
-    }) 
-/**Voltar ------------------------------------------------*/
-    previous.addEventListener('click', function(){
-        
-        if(numeroMusicaSelecionada==0){
-            numeroMusicaSelecionada=baseMusicas.length-1;
-            tocarMusica(numeroMusicaSelecionada);
-            atualizarInfoMusica(numeroMusicaSelecionada);
-            alterarCorMusicaSelecionada(numeroMusicaSelecionada)
+    }
+    console.log(numeroMusicaSelecionada)
     
-            numeroMusicaSelecionada=baseMusicas.length-1;
-                       
-        }
-        else{
-            numeroMusicaSelecionada--;
-            tocarMusica(numeroMusicaSelecionada);
-            atualizarInfoMusica(numeroMusicaSelecionada);
-            alterarCorMusicaSelecionada(numeroMusicaSelecionada)
-    
-        }
-        console.log(numeroMusicaSelecionada)
-    })
+
 
 
 /**-------------------------------------- */
@@ -221,6 +179,48 @@ range__volume.addEventListener('input', ()=>{
 
 })
 
+for(var j=0; j<baseMusicas.length ; j++){
+    const idValor = document.getElementsByClassName('linhas')[j]
+    idValor.addEventListener('click',(evento)=>{
+        numeroMusicaSelecionada= evento.currentTarget.id
+    })
+}
 
+    /**Avançar --------------------------------------------*/
+    next.addEventListener('click',function (){
 
+        if(numeroMusicaSelecionada==baseMusicas.length-1){
+            numeroMusicaSelecionada=0
+            tocarMusica(numeroMusicaSelecionada);
+            atualizarInfoMusica(numeroMusicaSelecionada);
+            alterarCorMusicaSelecionada(numeroMusicaSelecionada)
+        }
+        else{
+            numeroMusicaSelecionada++
+            tocarMusica(numeroMusicaSelecionada);
+            atualizarInfoMusica(numeroMusicaSelecionada);
+            alterarCorMusicaSelecionada(numeroMusicaSelecionada)
+        }
+        
+}) 
+/**Voltar ------------------------------------------------*/
+previous.addEventListener('click', function(){
+    
+    if(numeroMusicaSelecionada==0){
+        numeroMusicaSelecionada=baseMusicas.length-1;
+        tocarMusica(numeroMusicaSelecionada);
+        atualizarInfoMusica(numeroMusicaSelecionada);
+        alterarCorMusicaSelecionada(numeroMusicaSelecionada)
 
+        numeroMusicaSelecionada=baseMusicas.length-1;
+                   
+    }
+    else{
+        numeroMusicaSelecionada--;
+        tocarMusica(numeroMusicaSelecionada);
+        atualizarInfoMusica(numeroMusicaSelecionada);
+        alterarCorMusicaSelecionada(numeroMusicaSelecionada)
+
+    }
+    console.log(numeroMusicaSelecionada)
+})
