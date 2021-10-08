@@ -96,7 +96,7 @@ main{
     
     color: white;
     padding: 30px 15px;
-    min-height: 630px;
+    min-height: 430px;
 }
 .Bloco-Musicas .areadeMusicas button{
     background: #787cf5;
@@ -120,14 +120,14 @@ main{
     display: flex;
 }
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho p{
-    width: 30%;
+    width: 22%;
     padding: 10px;
     border-bottom: 0.5px solid rgb(136, 136, 136);
     color: white;
     font-weight: 600;
 }
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho .primeiro-item{
-    width: 40%;
+    width: 55%;
 }
 
 
@@ -148,18 +148,18 @@ main{
     min-height: 200px;
     height: 400px;
     overflow-y: scroll;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 .Bloco-Musicas .areadeMusicas .lista-das-musicas li{
     display: flex;
     
 }
-.Bloco-Musicas .areadeMusicas .lista-das-musicas p{
-    width: 30%;
+.Bloco-Musicas .areadeMusicas .lista-das-musicas  p{
+    width: 22%;
     padding: 10px;
     border-bottom: 0.5px solid rgb(136, 136, 136);
     color: white;
-    font-size: 15px;
+    font-size: 11px;
     display: flex;
     align-items: center;
 }
@@ -167,7 +167,7 @@ main{
     background-color: rgb(31, 31, 31);
 }
 .Bloco-Musicas .areadeMusicas .lista-das-musicas .primeiro-item{
-    width: 40%;
+    width: 55%;
 }
 
 
@@ -195,13 +195,13 @@ main{
 }
 .areaPlayer .infoMusica{
     margin-left: 15px;
-
+    width: 105px;
 }
 .areaPlayer .infoMusica h2{
-    font-size: 12px;
+    font-size: 9px;
 }
 .areaPlayer .infoMusica p{
-    font-size: 12px;
+    font-size: 7px;
 }
 .areaPlayer .areaPlayer__controls{
     display: flex;
@@ -279,11 +279,14 @@ main{
     margin-right: 11px;
     width: 26px;
 }
+.areaPlayer .infoMusica {
+    width:488px;
+}
 .areaPlayer .infoMusica h2{
-    font-size: 25px;
+    font-size: 16px;
 }
 .areaPlayer .infoMusica p{
-    font-size: 20px;
+    font-size: 13px;
 }
 .Bloco-Musicas .Banner{
     height: 200px;
@@ -309,6 +312,11 @@ main{
 .areaPlayer .areaPlayer__controls .previous{
     width: 35px;
 }
+
+.areaPlayer .areaPlayer__controls{
+    width: 366px;
+}
+
 .areaPlayer .areaPlayer__controls .play{
     width: 50px;
 }
@@ -319,7 +327,7 @@ main{
     padding: 30px 75px;
 }
 .Bloco-Musicas .areadeMusicas p{
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 .areaPlayer .areaVolume{
  
