@@ -84,17 +84,8 @@ function inserindoMusicasBaseDados() {
     for(var i=0; i< baseMusicas.length   ; i++){
 
         criandoLinha(baseMusicas[i] , i )
-
     }
-    console.log(numeroMusicaSelecionada)
-    
-
-
-
-/**-------------------------------------- */
-
 }
-
 inserindoMusicasBaseDados();
 
 
@@ -186,6 +177,23 @@ for(var j=0; j<baseMusicas.length ; j++){
     })
 }
 
+    /** Reprodução automática */
+    player.addEventListener('ended',()=>{
+        if(numeroMusicaSelecionada==baseMusicas.length-1){
+            numeroMusicaSelecionada=0
+            tocarMusica(numeroMusicaSelecionada);
+            atualizarInfoMusica(numeroMusicaSelecionada);
+            alterarCorMusicaSelecionada(numeroMusicaSelecionada)
+        }
+        else{
+            numeroMusicaSelecionada++
+            tocarMusica(numeroMusicaSelecionada);
+            atualizarInfoMusica(numeroMusicaSelecionada);
+            alterarCorMusicaSelecionada(numeroMusicaSelecionada)
+        }
+    })
+
+
     /**Avançar --------------------------------------------*/
     next.addEventListener('click',function (){
 
@@ -222,5 +230,5 @@ previous.addEventListener('click', function(){
         alterarCorMusicaSelecionada(numeroMusicaSelecionada)
 
     }
-    console.log(numeroMusicaSelecionada)
+  
 })
