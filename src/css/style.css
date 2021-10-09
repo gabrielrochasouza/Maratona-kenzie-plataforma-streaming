@@ -25,7 +25,7 @@ main{
 }
 /*Menu lateral*/
 .MenuLateral{
-    background: black;
+    background-color: rgb(16, 17, 18);
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -53,7 +53,7 @@ main{
 /*Banner */
 .Bloco-Musicas{}
 .Bloco-Musicas .Banner{
-    background-image: url(../img/header.png);
+    background-image: linear-gradient(44deg, rgb(0 171 92), rgb(0 183 166));
     background-size: cover;
     height: 150px;
     padding: 10px;
@@ -92,13 +92,13 @@ main{
 
 }
 .Bloco-Musicas .areadeMusicas{
-    background-color: #0c0c0c;
+    background-color: rgb(25, 27, 28);
     color: white;
     padding: 30px 15px;
     min-height: 630px;
 }
 .Bloco-Musicas .areadeMusicas button{
-    background: #3776ee;
+    background:linear-gradient(90deg, #25d399,rgb(3, 133, 83));
     color: white;
     padding: 7px 20px;
     font-size: 17px;
@@ -110,7 +110,7 @@ main{
     
 }
 .Bloco-Musicas .areadeMusicas button:hover{
-    background: linear-gradient(90deg,#6a03ca,#3d81ff);
+    background:linear-gradient(90deg, #07bb7f,rgb(3, 114, 71));
     transition: all 500ms;
 }
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho{}
@@ -175,7 +175,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(270deg, #6151ed, #1f006c);
+    background: linear-gradient(178deg,rgb(11, 11, 12), rgb(0, 0, 0));
     position: fixed;
     bottom: 0;
     max-width: 2000px;
