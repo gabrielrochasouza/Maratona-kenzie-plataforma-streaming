@@ -25,7 +25,11 @@ main{
 }
 /*Menu lateral*/
 .MenuLateral{
+<<<<<<< HEAD
     background-color: rgb(16, 17, 18);
+=======
+    background: rgb(14, 14, 14);
+>>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -51,15 +55,20 @@ main{
 /* Conteudo da direita com as musicas */
 
 /*Banner */
-.Bloco-Musicas{}
+.Bloco-Musicas{
+    background-color: #131313 !important;
+}
 .Bloco-Musicas .Banner{
+<<<<<<< HEAD
     background-image: linear-gradient(44deg, rgb(0 171 92), rgb(0 183 166));
+=======
+    background-color: rgb(111, 28, 245);
+>>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     background-size: cover;
     height: 150px;
     padding: 10px;
     position: relative;
     color: white;
-    background-color: black;
     font-weight: 600;
 }
 .Bloco-Musicas .Banner .user{
@@ -92,13 +101,21 @@ main{
 
 }
 .Bloco-Musicas .areadeMusicas{
+<<<<<<< HEAD
     background-color: rgb(25, 27, 28);
+=======
+    
+>>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     color: white;
     padding: 30px 15px;
-    min-height: 630px;
+    min-height: 430px;
 }
 .Bloco-Musicas .areadeMusicas button{
+<<<<<<< HEAD
     background:linear-gradient(90deg, #25d399,rgb(3, 133, 83));
+=======
+    background: #787cf5;
+>>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     color: white;
     padding: 7px 20px;
     font-size: 17px;
@@ -119,14 +136,14 @@ main{
     display: flex;
 }
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho p{
-    width: 30%;
+    width: 22%;
     padding: 10px;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid rgb(136, 136, 136);
     color: white;
     font-weight: 600;
 }
 .Bloco-Musicas .areadeMusicas .areadeMusicas__Cabecalho .primeiro-item{
-    width: 40%;
+    width: 55%;
 }
 
 
@@ -147,18 +164,18 @@ main{
     min-height: 200px;
     height: 400px;
     overflow-y: scroll;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 .Bloco-Musicas .areadeMusicas .lista-das-musicas li{
     display: flex;
     
 }
-.Bloco-Musicas .areadeMusicas .lista-das-musicas p{
-    width: 30%;
+.Bloco-Musicas .areadeMusicas .lista-das-musicas  p{
+    width: 22%;
     padding: 10px;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid rgb(136, 136, 136);
     color: white;
-    font-size: 15px;
+    font-size: 11px;
     display: flex;
     align-items: center;
 }
@@ -166,7 +183,7 @@ main{
     background-color: rgb(31, 31, 31);
 }
 .Bloco-Musicas .areadeMusicas .lista-das-musicas .primeiro-item{
-    width: 40%;
+    width: 55%;
 }
 
 
@@ -175,7 +192,11 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background: linear-gradient(178deg,rgb(11, 11, 12), rgb(0, 0, 0));
+=======
+    background: linear-gradient(360deg, black, #000811);
+>>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     position: fixed;
     bottom: 0;
     max-width: 2000px;
@@ -189,20 +210,23 @@ main{
 }
 .areaPlayer .imagemMusica img{
     width: 70px;
+    display: none;
+    opacity: 0.5;
 }
 .areaPlayer .infoMusica{
     margin-left: 15px;
-
+    width: 105px;
 }
 .areaPlayer .infoMusica h2{
-    font-size: 12px;
+    font-size: 9px;
 }
 .areaPlayer .infoMusica p{
-    font-size: 12px;
+    font-size: 7px;
 }
 .areaPlayer .areaPlayer__controls{
     display: flex;
     align-items: center;
+    width: 156px;
 }
 .areaPlayer .areaPlayer__controls .next,
 .areaPlayer .areaPlayer__controls .previous{
@@ -233,7 +257,9 @@ main{
     .areaPlayer .areaVolume input{
         display: initial;
     }
-
+    .areaPlayer .imagemMusica img {
+        display: initial;
+    }
 
   }
   @media only screen and (min-width: 1080px) {
@@ -248,7 +274,7 @@ main{
     width: 20%;
     display: initial;
     padding: 35px 40px;
-    height: 100vh;
+    height: 100auto;
 }
 .MenuLateral span{
     display: initial;
@@ -273,23 +299,44 @@ main{
     margin-right: 11px;
     width: 26px;
 }
+.areaPlayer .infoMusica {
+    width:488px;
+}
 .areaPlayer .infoMusica h2{
-    font-size: 25px;
+    font-size: 16px;
 }
 .areaPlayer .infoMusica p{
-    font-size: 20px;
+    font-size: 13px;
 }
 .Bloco-Musicas .Banner{
     height: 200px;
+    border-radius: 40px 0 0 0px;
+}
+.Bloco-Musicas .Banner .qtdMusicas{
+    font-size: 38px;
+    bottom: 40px;
+    left: 50px;
+}
+.Bloco-Musicas .Banner .user{
+
+    top: 40px;
+    right: 60px;
+
+    
 }
 .areaPlayer .imagemMusica img {
     width: 80px;
-    opacity: 0.5;
+    display: initial;
 }
 .areaPlayer .areaPlayer__controls .next,
 .areaPlayer .areaPlayer__controls .previous{
     width: 35px;
 }
+
+.areaPlayer .areaPlayer__controls{
+    width: 366px;
+}
+
 .areaPlayer .areaPlayer__controls .play{
     width: 50px;
 }
@@ -300,7 +347,7 @@ main{
     padding: 30px 75px;
 }
 .Bloco-Musicas .areadeMusicas p{
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 .areaPlayer .areaVolume{
  

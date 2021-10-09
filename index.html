@@ -7,38 +7,38 @@
     <title>Kenziefy</title>
 
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" 
-    rel="stylesheet">
+    rel="stylesheet"/>
     <!---->
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css"/>
 
 </head>
 <body>
     <main>
         <aside class="MenuLateral">
             <figure class="MenuLateral__logo">
-                <img src="src/img/logo.png" alt="">
+                <img src="src/img/logo.png" alt="logo da kenzie"/>
                 <figcaption class="hidden"></figcaption>
             </figure>
             <nav class="MenuLateral__navegacao">
                 <ul>
                     <a href="https://ufftech.com" target="_blank">
                         <li>
-                            <img src="src/img/icone1.png" alt="">
+                            <img src="src/img/icone1.png" alt="home icon">
                             <span>Home </span> 
                         </li>
                     </a>
                     <a href="#">
                         <li>
-                            <img src="src/img/icone2.png" alt="">
+                            <img src="src/img/icone2.png" alt="browse icon">
                             <span>Browse</span> 
                         </li>
                     </a>
                     <a href="#">
-                        <li>
-                            <img src="src/img/icone3.png" alt="">
+                        <li id="likeIconList">
+                            <img src="src/img/icone3.png" alt="like icon" id="likeIcon">
                             <span>Liked Songs</span> 
                         </li>
                     </a>
@@ -59,14 +59,14 @@
                 </div>
                 <div class="qtdMusicas">
                     <p>
-                    <span id="numSongs">57</span> Songs
+                    <span id="numSongs"></span> Songs
                     </p>
                 </div>    
             </header>
 
             <div class="areadeMusicas">
 
-                <button>
+                <button id="btn__pausar">
                     Pause
                 </button>
                 <div class="areadeMusicas__Cabecalho">
@@ -78,47 +78,15 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="lista-das-musicas">
-                    <li>
+                <ul class="lista-das-musicas" id="lista-das-musicas">
+                    <!--
+                        <li>
                         <p class="primeiro-item">Back in Black</p>
                         <p>AC DC</p>
                         <p>Highway to hell</p>
                     </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
-                    <li>
-                        <p class="primeiro-item">Back in Black</p>
-                        <p>AC DC</p>
-                        <p>Highway to hell</p>
-                    </li>
+                    -->
+                
                 </ul>
 
 
@@ -128,11 +96,11 @@
 
         <div class="areaPlayer">
             <figure class="imagemMusica">
-                <img src="src/img/album3.jpeg" alt="album">
+                <img src="src/img/album3.jpeg" id="fotoMusicaAtual" alt="album"/>
                 <figcaption class="hidden">Album</figcaption>
                 <div class="infoMusica">
-                    <h2>Titulo da Musica</h2>
-                    <p>Album</p>
+                    <h2 id="tituloMusicaAtual">Titulo da Musica</h2>
+                    <p id="tituloAlbumAtual">Album</p>
     
                 </div>
             </figure>
@@ -140,21 +108,23 @@
             
             
             <div class="areaPlayer__controls">
-                <img src="src/img/previous.png" class="previous" alt="previous">
-                <img src="src/img/play.png" class="play" alt="play">
-                <img src="src/img/next.png" class="next" alt="next">
+                <img src="src/img/previous.png" class="previous" alt="previous" id="previous">
+                <img src="src/img/play.png" class="play" alt="play" id="btn__player">
+                <img src="src/img/next.png" class="next" alt="next" id="next">
+                
+                <audio src="" id="audioPlayer" ></audio>
             </div>
 
             <div class="areaVolume">
-                <img src="src/img/volume.png" alt="volume">
-                <input type="range" class="bar">
+                <img src="src/img/volume.png" alt="volume" id="btn__volume"/>
+                <input type="range" class="bar" id="range__volume" max="1" value="0.5" step="0.05"/>
             </div>
 
         </div>
 
 
     </main>
-   
+    <script src="./src/js/script.js" type="module"></script>
 
 </body>
 </html>
