@@ -25,11 +25,7 @@ main{
 }
 /*Menu lateral*/
 .MenuLateral{
-<<<<<<< HEAD
     background-color: rgb(16, 17, 18);
-=======
-    background: rgb(14, 14, 14);
->>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -56,14 +52,10 @@ main{
 
 /*Banner */
 .Bloco-Musicas{
-    background-color: #131313 !important;
+    background-color: #191b1c !important;
 }
 .Bloco-Musicas .Banner{
-<<<<<<< HEAD
     background-image: linear-gradient(44deg, rgb(0 171 92), rgb(0 183 166));
-=======
-    background-color: rgb(111, 28, 245);
->>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     background-size: cover;
     height: 150px;
     padding: 10px;
@@ -96,26 +88,15 @@ main{
 /* Área que contem as musicas*/
 
 /* Cabeçalho das musicas*/
-.Bloco-Musicas {
-    background-color: #0c0c0c;
 
-}
 .Bloco-Musicas .areadeMusicas{
-<<<<<<< HEAD
     background-color: rgb(25, 27, 28);
-=======
-    
->>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     color: white;
     padding: 30px 15px;
     min-height: 430px;
 }
 .Bloco-Musicas .areadeMusicas button{
-<<<<<<< HEAD
     background:linear-gradient(90deg, #25d399,rgb(3, 133, 83));
-=======
-    background: #787cf5;
->>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     color: white;
     padding: 7px 20px;
     font-size: 17px;
@@ -192,11 +173,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
     background: linear-gradient(178deg,rgb(11, 11, 12), rgb(0, 0, 0));
-=======
-    background: linear-gradient(360deg, black, #000811);
->>>>>>> 06a8f273d669e55444e4371f95a808c4036b8fa4
     position: fixed;
     bottom: 0;
     max-width: 2000px;
@@ -274,7 +251,7 @@ main{
     width: 20%;
     display: initial;
     padding: 35px 40px;
-    height: 100auto;
+    height: 100vh;
 }
 .MenuLateral span{
     display: initial;
