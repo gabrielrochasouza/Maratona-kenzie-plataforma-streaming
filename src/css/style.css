@@ -242,6 +242,8 @@ main{
   @media only screen and (min-width: 1080px) {
     main{
         display: flex;
+        height: 100vh;
+        min-height: 800px;
     }
     .Bloco-Musicas{
         width: 80%;
@@ -251,7 +253,7 @@ main{
     width: 20%;
     display: initial;
     padding: 35px 40px;
-    height: 100vh;
+    height: 100%;
 }
 .MenuLateral span{
     display: initial;
